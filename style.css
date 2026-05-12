@@ -7,14 +7,14 @@
   --litter-space-sm: -0.05em;
 
   /* container spacing */
-  --spacing-multiplaier: 2;
+  --spacing-multiplier: 2;
   --padding-inline-m: clamp(1rem, calc(1.5023vw + 0.6479rem), 2rem);
   --padding-block-m: var(--padding-inline-m);
 
   /* element spacing */
-  --gap-s: calc(var(--gap-m) / var(--spacing-multiplaier));
+  --gap-s: calc(var(--gap-m) / var(--spacing-multiplier));
   --gap-m: 1rem;
-  --gap-l: calc(var(--gap-m) * var(--spacing-multiplaier));
+  --gap-l: calc(var(--gap-m) * var(--spacing-multiplier));
 
   /* buttons */
   --btn-padding-inline-l: 9em;
@@ -23,8 +23,8 @@
   --radius-circle: 100%;
 
   /* colors */
-  --clr-primery: hsl(75, 94%, 57%);
-  --clr-txt-primery: white;
+  --clr---primary: hsl(75, 94%, 57%);
+  --clr-txt---primary: white;
   --clr-base-900: hsl(0, 0%, 8%);
   --clr-base-800: hsl(0, 0%, 12%);
   --clr-base-700: hsl(0, 0%, 20%);
@@ -69,7 +69,7 @@ footer {
   padding-block: 0;
   letter-spacing: var(--litter-space-sm);
   font-family: Inter, Arial, sans-serif;
-  color: var(--clr-txt-primery);
+  color: var(--clr-txt---primary);
 }
 p,
 a {
@@ -77,9 +77,9 @@ a {
   text-decoration: none;
 }
 a {
-  color: var(--clr-primery);
+  color: var(--clr---primary);
   &:focus-visible {
-    outline: 3px solid var(--clr-primery);
+    outline: 3px solid var(--clr---primary);
   }
 }
 h1 {
@@ -137,7 +137,7 @@ section {
 }
 .lead {
   font-weight: 600;
-  color: var(--clr-primery);
+  color: var(--clr---primary);
 }
 
 .social-link__list {
@@ -152,7 +152,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-txt-primery);
+  background-color: var(--clr-txt---primary);
   padding-inline: var(--btn-padding-inline-l);
   padding-block: var(--btn-padding-block-m);
   color: var(--clr-base-700);
@@ -162,15 +162,18 @@ section {
   &:hover {
     cursor: pointer;
     background-color: var(--clr-base-700);
-    color: var(--clr-txt-primery);
+    color: var(--clr-txt---primary);
   }
 }
 .btn--primary {
-  color: var(--clr-txt-primery);
+  color: var(--clr-txt---primary);
   background-color: var(--clr-base-700);
   &:hover {
     color: var(--clr-base-900);
-    background-color: var(--clr-primery);
+    background-color: var(--clr---primary);
+  }
+   &:focus-visible {
+    outline: 3px solid var(--clr---primary);
   }
 }
 .attribution {
